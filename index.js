@@ -51,7 +51,7 @@ function removeFromCart(item) {
     if(cart[i].itemName === item){
       delete cart[i].itemName;
     }
-  }
+  }return item;
 }
 
 function placeOrder(cardNumber) {
