@@ -19,6 +19,8 @@ let price = Math.floor(Math.random() * 100) + 1;
 function viewCart() {
   if(cart.length === 0){
     return "Your shopping cart is empty.";
+  }else{
+    return `In your cart, you have ${cart.itemName} at ${cart.itemPrice}.`
   }
 }
 
