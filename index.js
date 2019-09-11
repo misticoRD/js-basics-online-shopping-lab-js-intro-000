@@ -36,7 +36,7 @@ function viewCart() {
       return `In your cart, you have ${array.join(', ')}, and ${lastItem}.`
     }
   }
-}
+
 
 function total() {
   // write your code here
