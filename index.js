@@ -22,7 +22,7 @@ function viewCart() {
   } else {
     let itemsList = [];
     for (let i = 0; i < cart.length; i++) {
-      for (let item in cart[i]) {
+      for (let itemName in cart[i]) {
         itemsList.push(`${item}   at ${cart[i][item]}.`)
       }
     }
