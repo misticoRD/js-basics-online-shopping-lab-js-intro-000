@@ -17,7 +17,7 @@ let price = Math.floor(Math.random() * 100) + 1;
 }
 
 function viewCart() {
-  var array = [];
+  let array = [];
 
     for ( let i = 0; i < cart.length; i++) {
         array.push(`${cart[i].itemName} at $${cart[i].itemPrice}`)
