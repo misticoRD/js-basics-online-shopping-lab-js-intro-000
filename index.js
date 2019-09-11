@@ -23,7 +23,7 @@ function viewCart() {
     let itemsList = [];
     for (let i = 0; i < cart.length; i++) {
       for (let itemName in cart[i]) {
-        itemsList.push(`${cart[i][itemName]}$`)
+        itemsList.push(`${cart[i][itemName]}`)
       }
     }
     return "In your cart, you have " + itemsList.join(" ") ;
