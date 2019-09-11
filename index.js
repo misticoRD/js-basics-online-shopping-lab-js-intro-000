@@ -17,9 +17,9 @@ let price = Math.floor(Math.random() * 100) + 1;
 }
 
 function viewCart() {
-
+  var itemList [];
     for ( let i = 0; i < cart.length; i++) {
-        array.push(`${cart[i].itemName} at $${cart[i].itemPrice}`)
+        itemList.push(`${cart[i].itemName} at $${cart[i].itemPrice}`)
     }
     if (cart.length === 0) {
       return `Your shopping cart is empty.`;}
