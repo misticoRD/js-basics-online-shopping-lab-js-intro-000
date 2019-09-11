@@ -17,17 +17,15 @@ let price = Math.floor(Math.random() * 100) + 1;
 }
 
 function viewCart() {
-  if (cart.length === 0) {
-    return "Your shopping cart is empty.";
-  } else {
-    let itemsList = [];
-    for (let i = 0; i < cart.length; i++) {
-      for (let itemName in cart[i]) {
-        itemsList.push(`${cart[i][itemName]}`)
-      }
+  
+    for ( let i = 0; i < cart.length; i++) {
+        array.push(`${cart[i].itemName} at $${cart[i].itemPrice}`)
     }
-    return "In your cart, you have " + itemsList.join(" ") ;
-  }
+    if (cart.length === 0) {
+      return `Your shopping cart is empty.`;}
+  
+    if (cart.length === 1){
+      return `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}.`;
 }
 
 function total() {
