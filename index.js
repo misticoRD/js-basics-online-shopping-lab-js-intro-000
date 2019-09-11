@@ -23,10 +23,10 @@ function viewCart() {
     let itemsList = [];
     for (let i = 0; i < cart.length; i++) {
       for (let itemName in cart[i]) {
-        itemsList.push(`${cart[i][itemName]} at.`)
+        itemsList.push(`${cart[i][itemName]} at`)
       }
     }
-    return "In your cart, you have " + itemsList.join(", ") ;
+    return "In your cart, you have " + itemsList.join(" ") ;
   }
 }
 
